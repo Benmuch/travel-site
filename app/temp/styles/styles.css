@@ -780,6 +780,11 @@ a {
 }
 	}
 
+.feature-item__icon {
+		display: block;
+		margin: 0 auto;
+	}
+
 @media (min-width: 530px) {
 
 .feature-item__icon {
@@ -789,7 +794,18 @@ a {
 	}
 
 .feature-item__title {
-		font-size: 1.875rem;
+		font-size: 1.6rem;
 		font-weight: 300;
+		margin-top: 0.7rem;
 		margin-bottom: .8rem;
+		text-align: center;
+	}
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+			margin-top: 1rem;
+			font-size: 1.875rem;
+			text-align: left
+	}
 	}
