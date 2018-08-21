@@ -1,11 +1,15 @@
 /* Do not edit modules/_sprite directly as it is generated automtically by Gulp
-Instead edit gulp/templates/spirit */
+Instead edit gulp/templates/sprite */
 
 
 {{#shapes}}
 	{{#first}}
 		.icon {
 			background-image: url('/assets/images/sprites/{{{sprite}}}');
+		}
+
+		.no-svg .icon {
+			background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
 		}
 	{{/first}}
 	.icon--{{base}} {
